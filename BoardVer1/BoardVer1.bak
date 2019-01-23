@@ -28,12 +28,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5C3C77F2
-P 1400 2450
-F 0 "J1" H 1320 2125 50  0000 C CNN
-F 1 "Vin" H 1320 2216 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1400 2450 50  0001 C CNN
-F 3 "~" H 1400 2450 50  0001 C CNN
-	1    1400 2450
+P 1900 2450
+F 0 "J1" H 1820 2125 50  0000 C CNN
+F 1 "Vin" H 1820 2216 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1900 2450 50  0001 C CNN
+F 3 "~" H 1900 2450 50  0001 C CNN
+	1    1900 2450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -50,12 +50,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5C3C7947
-P 1850 2700
-F 0 "#PWR0102" H 1850 2450 50  0001 C CNN
-F 1 "GND" H 1855 2527 50  0000 C CNN
-F 2 "" H 1850 2700 50  0001 C CNN
-F 3 "" H 1850 2700 50  0001 C CNN
-	1    1850 2700
+P 2350 2700
+F 0 "#PWR0102" H 2350 2450 50  0001 C CNN
+F 1 "GND" H 2355 2527 50  0000 C CNN
+F 2 "" H 2350 2700 50  0001 C CNN
+F 3 "" H 2350 2700 50  0001 C CNN
+	1    2350 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -185,30 +185,16 @@ $EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 5C3CD75E
-P 1800 2350
-F 0 "F1" V 1575 2350 50  0000 C CNN
-F 1 "Polyfuse" V 1666 2350 50  0000 C CNN
-F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 1850 2150 50  0001 L CNN
-F 3 "~" H 1800 2350 50  0001 C CNN
-	1    1800 2350
+P 2300 2350
+F 0 "F1" V 2075 2350 50  0000 C CNN
+F 1 "Polyfuse" V 2166 2350 50  0000 C CNN
+F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 2350 2150 50  0001 L CNN
+F 3 "~" H 2300 2350 50  0001 C CNN
+	1    2300 2350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 2350 1600 2350
-$Comp
-L Device:CP C1
-U 1 1 5C3CE051
-P 2400 2500
-F 0 "C1" H 2518 2546 50  0000 L CNN
-F 1 "100uF" H 2450 2350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2438 2350 50  0001 C CNN
-F 3 "~" H 2400 2500 50  0001 C CNN
-	1    2400 2500
-	1    0    0    -1  
-$EndComp
-Connection ~ 2400 2350
-Wire Wire Line
-	2400 2650 2400 2700
+	2150 2350 2100 2350
 $Comp
 L Device:CP C5
 U 1 1 5C3CECAC
@@ -254,31 +240,25 @@ Place close to Motor VIN
 $Comp
 L Device:D_Schottky D1
 U 1 1 5C3D234E
-P 2100 2500
-F 0 "D1" V 2054 2579 50  0000 L CNN
-F 1 "D_Schottky" V 2400 2450 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB_Handsoldering" H 2100 2500 50  0001 C CNN
-F 3 "~" H 2100 2500 50  0001 C CNN
-	1    2100 2500
+P 2600 2500
+F 0 "D1" V 2554 2579 50  0000 L CNN
+F 1 "D_Schottky" V 2900 2450 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 2600 2500 50  0001 C CNN
+F 3 "~" H 2600 2500 50  0001 C CNN
+	1    2600 2500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2100 2350 2400 2350
+	2450 2350 2600 2350
+Connection ~ 2350 2700
 Wire Wire Line
-	1950 2350 2100 2350
-Connection ~ 2100 2350
+	2600 2650 2600 2700
 Wire Wire Line
-	2400 2700 2100 2700
-Connection ~ 1850 2700
+	2600 2700 2350 2700
 Wire Wire Line
-	2100 2650 2100 2700
-Connection ~ 2100 2700
+	2350 2700 2100 2700
 Wire Wire Line
-	2100 2700 1850 2700
-Wire Wire Line
-	1850 2700 1600 2700
-Wire Wire Line
-	1600 2700 1600 2450
+	2100 2700 2100 2450
 $Comp
 L Device:LED_Small_ALT D2
 U 1 1 5C3D4E76
@@ -523,9 +503,6 @@ Wire Wire Line
 	3050 2600 2950 2600
 Wire Wire Line
 	2950 2600 2950 2350
-Connection ~ 2950 2350
-Wire Wire Line
-	2950 2350 2400 2350
 Wire Wire Line
 	3250 2750 3250 2600
 Wire Wire Line
@@ -1688,7 +1665,7 @@ Text GLabel 12550 3200 2    50   Input ~ 0
 PixelStrip
 Text GLabel 11300 2100 0    50   Input ~ 0
 OverCurrent
-Text GLabel 11300 2800 0    50   Input ~ 0
+Text GLabel 12550 2500 2    50   Input ~ 0
 Pixel
 Text GLabel 11300 2700 0    50   Input ~ 0
 StallGuard
@@ -1922,4 +1899,10 @@ Wire Wire Line
 	11400 3000 11300 3000
 Wire Wire Line
 	11400 3100 11300 3100
+Wire Wire Line
+	12550 2500 12400 2500
+Wire Wire Line
+	2950 2350 2600 2350
+Connection ~ 2950 2350
+Connection ~ 2600 2350
 $EndSCHEMATC

@@ -283,7 +283,7 @@ F 3 "~" H 3700 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 2350 3350 2350
-Text Notes 3850 3950 0    50   ~ 0
+Text Notes 4000 3100 0    50   ~ 0
 LED resistor\nVF=2.2V\n2.2K=9.9mA\n5.1K=4.2mA\n10K=2.2mA
 Text GLabel 2400 8350 0    50   Input ~ 0
 CSN
