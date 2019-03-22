@@ -1,6 +1,41 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Board-rescue:A03401-Peters
+#
+DEF Board-rescue:A03401-Peters Q 0 40 Y Y 1 F N
+F0 "Q" -300 350 60 H V C CNN
+F1 "Board-rescue:A03401-Peters" -200 250 60 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" -3200 1200 60 H I C CNN
+F3 "http://192.168.0.102/api/part_attachments/1647/getFile" -3200 1200 60 H I C CNN
+$FPLIST
+ SOT23
+$ENDFPLIST
+DRAW
+C -35 0 111 0 1 10 N
+C 0 -70 11 0 1 0 F
+C 0 70 11 0 1 0 F
+P 2 0 1 0 -100 0 -90 0 N
+P 2 0 1 0 -70 -70 0 -70 N
+P 2 0 1 10 -70 -50 -70 -90 N
+P 2 0 1 0 -70 0 0 0 N
+P 2 0 1 10 -70 20 -70 -20 N
+P 2 0 1 0 -70 70 0 70 N
+P 2 0 1 10 -70 90 -70 50 N
+P 2 0 1 0 0 -70 0 -100 N
+P 2 0 1 0 0 -70 0 0 N
+P 2 0 1 0 0 100 0 70 N
+P 3 0 1 10 -90 75 -90 -75 -90 -75 N
+P 4 0 1 0 -10 0 -50 -15 -50 15 -10 0 F
+P 4 0 1 0 0 -70 30 -70 30 70 0 70 N
+P 4 0 1 0 10 -20 15 -15 45 -15 50 -10 N
+P 4 0 1 0 30 -15 15 10 45 10 30 -15 N
+X G 1 -300 0 200 R 50 50 1 1 I
+X D 2 0 200 100 D 50 50 1 1 P
+X S 3 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Board-rescue:AP2210-3.3V-Peters
 #
 DEF Board-rescue:AP2210-3.3V-Peters U 0 40 Y Y 1 F N
@@ -150,6 +185,26 @@ DRAW
 A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
 P 2 1 1 6 -50 0 -20 0 N
 X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector:Conn_01x02_Male
+#
+DEF Connector:Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector:Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
